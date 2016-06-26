@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  get 'access', :to => 'access#index'
+  get 'access/login'
+  post 'access/attempt_login'
+  post 'access/logout'
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
